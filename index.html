@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArrendaOco</title>
+  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="Cormorant.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="brand-logo"><img src="img/logo.png" alt="imagenlogo" class="logo">ArrendaOco</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-links" id="navbarNavAltMarkup">
+            <a class="nav-item active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-item" href="nosotros.html">Nosotros</a>
+            <a class="nav-item" href="login_propietario.html">Registrarse</a>
+            <a class="nav-item" href="./login.html">Iniciar Sesión</a>
+        </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1 class="titulo">Bienvenidos</h1>
+    <p class="subtitulo">¡Encuentra tu nuevo hogar: renta la propiedad ideal!</p>
+  </header>
+
+  <div class="inmuebles-section">
+    <section class="inmuebles-container">
+      <h2 class="inmuebles-title">Inmuebles</h2>
+
+      <div class="inmuebles-grid">
+        <div class="inmueble-card">
+          <div class="image-overlay-container">
+            <a href="login.html" class="btn-inmueble-custom">Casas</a>
+            <div class="image-wrapper"> <img src="img/home2.jpg" alt="Casa"></a>
+            </div>
+          </div>
+        </div>
+        <div class="inmueble-card">
+          <div class="image-overlay-container">
+            <a href="login.html" class="btn-inmueble-custom">Departamentos</a>
+            <div class="image-wrapper"><img src="img/home3.jpg" alt="Departamento"></a>
+            </div>
+          </div>
+        </div>
+        <div class="inmueble-card">
+          <div class="image-overlay-container">
+            <a href="login.html" class="btn-inmueble-custom">Cuartos</a>
+            <div class="image-wrapper"><img src="img/home4.jpg" alt="Cuarto"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<section class="promo-contacto">
+  <h2>¿Deseas promocionar tu inmueble?</h2>
+  <p>Publica tu espacio en nuestra plataforma y llega a más personas.</p>
+  <a href="login_propietario.html" class="btn-promo">Registrate</a>
+</section>
+
+<footer class="redes-sociales">
+  <h3>Síguenos en redes</h3>
+  <div class="iconos-redes">
+    
+    <a href="https://instagram.com/aoco.05"><img src="img\instagram.svg" alt="Ícono" width="30" height="30" ></a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arrendaoco@gmail.com" target="_blank"><img src="img\envelope-at-fill.svg" alt="Ícono" width="30" height="30"></a>
+    
+  </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarLinks = document.querySelector('.navbar-links');
+
+        menuToggle.addEventListener('click', function() {
+            navbarLinks.classList.toggle('active');
+        });
+    });
+</script>
+</body>
+</html>
